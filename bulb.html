@@ -1,0 +1,96 @@
+<html>
+<head>
+<script>
+
+ function on()
+ { 
+   document.getElementById("b1").src="https://img.freepik.com/free-vector/realistic-light-bulb-with-electricity_23-2149129410.jpg";
+   document.getElementById("b2").src="https://img.freepik.com/free-vector/realistic-light-bulb-with-electricity_23-2149129410.jpg";
+   document.getElementById("b3").src="https://img.freepik.com/free-vector/realistic-light-bulb-with-electricity_23-2149129410.jpg";
+  }
+  function off()
+  {
+   document.getElementById("b1").src="bulb.jpg";
+   document.getElementById("b2").src="bulb.jpg";
+   document.getElementById("b3").src="bulb.jpg";
+  }
+  function on11()
+ { 
+   document.getElementById("bs1").src="https://img.freepik.com/free-vector/realistic-light-bulb-with-electricity_23-2149129410.jpg";
+   document.getElementById("bs2").src="https://img.freepik.com/free-vector/realistic-light-bulb-with-electricity_23-2149129410.jpg";
+   document.getElementById("bs3").src="https://img.freepik.com/free-vector/realistic-light-bulb-with-electricity_23-2149129410.jpg";
+  }
+  function off11()
+  {
+   document.getElementById("bs1").src="bulb.jpg";
+   document.getElementById("bs2").src="bulb.jpg";
+   document.getElementById("bs3").src="bulb.jpg";
+  }
+   function breakb()
+   {
+     document.getElementById("b1").src="https://thumbs.dreamstime.com/z/broken-down-light-bulb-21064711.jpg";
+   document.getElementById("b2").src="https://thumbs.dreamstime.com/z/broken-down-light-bulb-21064711.jpg";
+   document.getElementById("b3").src="https://thumbs.dreamstime.com/z/broken-down-light-bulb-21064711.jpg";
+   }
+   function breakb1(val)
+   {
+    if(val=="break1")
+    {
+      document.getElementById("bs1").src="https://thumbs.dreamstime.com/z/broken-down-light-bulb-21064711.jpg";
+    }
+    else if(val=="break2")
+    {
+      document.getElementById("bs2").src="https://thumbs.dreamstime.com/z/broken-down-light-bulb-21064711.jpg";
+    }
+    else
+    {
+      document.getElementById("bs3").src="https://thumbs.dreamstime.com/z/broken-down-light-bulb-21064711.jpg";
+    }
+     
+   
+  }
+  
+</script>
+ 
+<style type=text/css>
+  #on1,#on2{
+        background-color:green;
+      }
+  #off1,#off2{
+        background-color:red;
+      }
+  #b11,#b12,#b13,#b21,#b22,#b23{
+        background-color:gold;
+      }
+</style>
+
+</head>
+   <body>
+     <center>
+       <h1>BULB CONNECTION<h1>
+       <h5>Series connection<h5>
+       <img id="b1"src="bulb.jpg" width="200" height="200"> <img id="b2"src="bulb.jpg" width="200" height="200"><img id="b3" src="bulb.jpg" width="200" height="200">
+       <br>
+       <input id="on1" type="button" value="ON" onclick="on()"/>
+        <input id="off1" type="button" value="OFF" onclick="off()"/>
+        <br>
+        <br>
+        <input id="b11" type="button" value="break1" onclick="breakb()"/>
+        <input id="b12" type="button" value="break2" onclick="breakb()"/>
+        <input id="b13" type="button" value="break3" onclick="breakb()"/>
+        
+        
+       <h5>parallel connection<h5>
+       <img id="bs1" src="bulb.jpg" width="200" height="200"/> <img id="bs2" src="bulb.jpg" width="200" height="200"/><img id="bs3" src="bulb.jpg" width="200" height="200"/>
+       <br>
+       <input id="on2" type="button" value="ON" onclick="on11()"/>
+        <input id="off2" type="button" value="OFF" onclick="off11()"/>
+       <br>
+       <br>
+       <input id="b21" type="button" value="break1" onclick="breakb1(this.value)"/>
+        <input id="b22" type="button" value="break2" onclick="breakb1(this.value)"/>
+        <input id="b23" type="button" value="break3" onclick="breakb1(this.value)"/>
+    </center>
+       
+  </body>
+<html>
